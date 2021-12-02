@@ -1,0 +1,42 @@
+td{
+    background-color: black ;
+    width: 65px;
+    height: 65px;
+    text-align: center;
+     
+}
+.no-piece{
+    background-color: red;
+}
+.black-checker{
+    width: 20px;
+    height: 20px;
+    padding: auto;
+    background-color: black;
+    border: 1px solid white;
+    background-image: url("Assets/black-chesspiece.png");
+    background-position: center;
+    background-size: cover;
+}
+    
+.red-checker{
+    width: 20px;
+    height: 20px;
+    padding: auto;
+    background-color: black;
+    border: 1px solid white;
+    background-image: url("Assets/red-checker.png");
+    background-position: center;
+    background-size: cover;
+}
+.king.red-checker{
+    background-image: url("Assets/red-king.png");
+    background-position: center;
+    background-size: cover;
+
+}
+.king.black-checker{
+    background-image: url("Assets/Black-King.png");
+    background-position: center;
+    background-size: cover;
+}
