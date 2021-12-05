@@ -1,42 +1,64 @@
-td{
-    background-color: black ;
-    width: 65px;
-    height: 65px;
-    text-align: center;
-     
+body{
+    overflow:hidden;
+    user-select:none;
+    background-color:rgb(102,51,0);
 }
-.no-piece{
-    background-color: red;
+canvas{
+    position:absolute;
+    border:10px solid rgb(51,26,0);
+    transform:translate(-50%,-50%);
+    left:50%;
+    top:50%;
 }
-.black-checker{
-    width: 20px;
-    height: 20px;
-    padding: auto;
-    background-color: black;
-    border: 1px solid white;
-    background-image: url("Assets/black-chesspiece.png");
-    background-position: center;
-    background-size: cover;
+.data{
+    border-bottom:2px solid rgb(51,26,0);
+    border-right:2px solid rgb(51,26,0);
+    background-color:rgb(77,40,0);
+    position:absolute;
+    padding-left:2px;
+    height:60px;
+    width:80px;
+    left:0px;
+    top:0px;
 }
-    
-.red-checker{
-    width: 20px;
-    height: 20px;
-    padding: auto;
-    background-color: black;
-    border: 1px solid white;
-    background-image: url("Assets/red-checker.png");
-    background-position: center;
-    background-size: cover;
+.gameOver{
+    position:absolute;
+    display:none;
+    height:100%;
+    width:100%;
+    left:0px;
+    top:0px;
 }
-.king.red-checker{
-    background-image: url("Assets/red-king.png");
-    background-position: center;
-    background-size: cover;
-
+.mask{
+    background-color:rgba(0,0,0,0.2);
+    position:absolute;
+    height:100%;
+    width:100%;
+    left:0px;
+    top:0px;
 }
-.king.black-checker{
-    background-image: url("Assets/Black-King.png");
-    background-position: center;
-    background-size: cover;
+.gameOverBox{
+    border:2px solid rgb(51,26,0);
+    background-color:rgb(77,40,0);
+    transform:translate(-50%,-50%);
+    position:absolute;
+    height:100px;
+    width:200px;
+    left:50%;
+    top:50%;
+}
+.gameOverButton{
+    background-color:rgb(77,40,0);
+    position:absolute;
+    width:100px;
+    bottom:5px;
+    left:50px;
+}
+.gameOverText{
+    position:absolute;
+    height:50px;
+    width:100px;
+    left:50px;
+    text-align:center;
+    font-size:30px;
 }
