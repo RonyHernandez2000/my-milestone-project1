@@ -19,7 +19,7 @@ let map = [
     [0,1,0,0,0,2,0,2],
     [1,0,1,0,0,0,2,0]
 ];
-// Board outline and properties of it 
+// Board outline and checkers design and properties of it 
 function resize(){
     canvas.height = window.innerHeight*0.6;
     canvas.width =  window.innerHeight*0.6;
