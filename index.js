@@ -1,13 +1,14 @@
+// Variables
 document.getElementById("button").onclick = resetGame;
 let canvas = document.getElementById("game");
 let ctx = canvas.getContext("2d");
 window.onresize = resize;
 window.onload = resize;
-
+// player properties
 let squareSize,turn = 0,selectedPiece = [],validSpaces = [];
 let numOfWhite = 12, numOfBlack = 12;
 updateScore();
-
+//Board 
 let map = [
     [0,1,0,0,0,2,0,2],
     [1,0,1,0,0,0,2,0],
@@ -18,7 +19,7 @@ let map = [
     [0,1,0,0,0,2,0,2],
     [1,0,1,0,0,0,2,0]
 ];
-
+// Board outline and properties of it 
 function resize(){
     canvas.height = window.innerHeight*0.6;
     canvas.width =  window.innerHeight*0.6;
@@ -95,6 +96,7 @@ function drawCanvas(){
         }
     }
 }
+// How checkers delete each other
 canvas.onclick = (e)=>{
     let x = Math.floor(e.offsetX/squareSize);
     let y = Math.floor(e.offsetY/squareSize);
@@ -249,6 +251,7 @@ canvas.onclick = (e)=>{
     updateScore();
     validMovesAvailable();
 }
+// being able to highlight only valid spaces to move 
 function selectValidSpaces(turn,blank,x,y){
     let enemy,enemyK;
     if(turn == 0){
@@ -418,6 +421,7 @@ function selectValidSpaces(turn,blank,x,y){
         }
     }
 }
+// If no available spots to move then other team is winner 
 function alreadyChecked(x,y){
     let match = false;
     for(let i = 0; i < validSpaces.length; i++){
@@ -427,6 +431,7 @@ function alreadyChecked(x,y){
     }
     return match;
 }
+// Game Over-Restart screen
 function gameOver(winner){
     let gameOverText = document.getElementById("gameOverText");
     if(winner === 0) gameOverText.innerText = "White won!";
@@ -454,6 +459,7 @@ function resetGame(){
     updateScore();
     drawCanvas();
 }
+// Score Updates 
 function updateScore(){
     let data = document.getElementById("data");
     let turnText;
@@ -464,6 +470,7 @@ function updateScore(){
     data.innerText += "White: "+numOfWhite+"\n";
     data.innerText += "Black: "+numOfBlack+"\n";
 }
+// Only being able to move in available Spots on the Board 
 function validMovesAvailable(){
     if(selectedPiece.length == 0){
         let myPiece1,myPiece2;
