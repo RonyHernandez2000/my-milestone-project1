@@ -1,4 +1,4 @@
-# my-milestone-project1
+# my-milestone-project1 - Checkers 
 __________________________________________________________________
 
 This my Try on a Simple game of checkers hopefully it works !
