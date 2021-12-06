@@ -3,6 +3,8 @@ __________________________________________________________________
 
 This my Try on a Simple game of checkers hopefully it works !
 
+How to Play Checkers : https://www.youtube.com/watch?v=ScKIdStgAfU&t=86s
+
 Demo Website: https://ronyhernandez2000.github.io/my-milestone-project1/
 
 
