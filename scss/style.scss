@@ -1,0 +1,66 @@
+$background-color_1: rgb(161, 113, 35);
+$background-color_2: rgb(255, 255, 255);
+$background-color_3: rgba(0, 0, 0, 0.2);
+$background-color_4: rgb(77,40,0);
+
+body {
+	overflow: hidden;
+	user-select: none;
+	background-color: $background-color_1;
+}
+canvas {
+	position: absolute;
+	border: 10px solid rgb(51,26,0);
+	transform: translate(-50%,-50%);
+	left: 50%;
+	top: 50%;
+}
+.data {
+	border-bottom: 2px solid rgb(51,26,0);
+	border-right: 2px solid rgb(51,26,0);
+	background-color: $background-color_2;
+	height: 60px;
+	width: 80px;
+	top: 0px;
+}
+.gameOver {
+	position: absolute;
+	display: none;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+}
+.mask {
+	background-color: $background-color_3;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+}
+.gameOverBox {
+	border: 2px solid rgb(51,26,0);
+	background-color: $background-color_4;
+	transform: translate(-50%,-50%);
+	position: absolute;
+	height: 100px;
+	width: 200px;
+	left: 50%;
+	top: 50%;
+}
+.gameOverButton {
+	background-color: $background-color_4;
+	position: absolute;
+	width: 100px;
+	bottom: 5px;
+	left: 50px;
+}
+.gameOverText {
+	position: absolute;
+	height: 50px;
+	width: 100px;
+	left: 50px;
+	text-align: center;
+	font-size: 30px;
+}
